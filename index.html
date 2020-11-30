@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas</title>
+    <style>
+        form {
+            text-align: center;
+            margin: 100px;
+            font-family: sans-serif;
+        }
+    </style>
+    <script>
+        alert ("Selamat Datang")
+        function cek() {
+            if (hitung.angka1.value == "" ||hitung.angka2.value == "") {
+                alert("Data kosong");
+                exit
+            }
+        }
+        function hasil() {
+            cek();
+            a = parseInt(hitung.angka1.value);
+            b = parseInt(hitung.angka2.value);
+            hitung.hasilnya.value = a+b;
+
+            document.body.style.backgroundColor="#00FF00";
+        }
+    </script>
+</head>
+<body>
+    <form name="hitung">
+        <h2>Operasi Penjumlahan</h2>
+        Angka 1     : <input type="text" name="angka1"> <br><br>
+        Angka 2     : <input type="text" name="angka2"> <br><br>
+        Hasilnya    : <input type="text" name="hasilnya"> <br><br>
+        <input type="button" onclick="hasil()" value="Hasil">
+        <input type="reset" value="Ulangi">
+    </form>
+</body>
+</html>
